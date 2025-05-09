@@ -42,7 +42,7 @@ export function PartnerSection() {
               <Card className="overflow-hidden">
                 <div className="h-40 bg-white flex items-center justify-center p-4">
                   <Image
-                    src="/placeholder.svg?height=100&width=200"
+                    src="/9.webp"
                     alt="Partner Logo 1"
                     width={200}
                     height={100}
@@ -72,7 +72,7 @@ export function PartnerSection() {
               <Card className="overflow-hidden">
                 <div className="h-40 bg-white flex items-center justify-center p-4">
                   <Image
-                    src="/placeholder.svg?height=100&width=200"
+                    src="/10.jpg"
                     alt="Partner Logo 2"
                     width={200}
                     height={100}
@@ -102,7 +102,7 @@ export function PartnerSection() {
               <Card className="overflow-hidden">
                 <div className="h-40 bg-white flex items-center justify-center p-4">
                   <Image
-                    src="/placeholder.svg?height=100&width=200"
+                    src="/safecycle.png"
                     alt="Partner Logo 3"
                     width={200}
                     height={100}

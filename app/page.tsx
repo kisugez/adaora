@@ -14,8 +14,9 @@ import { AnimatedSection } from "@/components/animated-section"
 import { ParallaxSection } from "@/components/parallax-section"
 import { ParallaxScroll } from "@/components/parallax-scroll"
 import { ParallaxBackground } from "@/components/parallax-background"
-import { motion, useScroll, useTransform } from "framer-motion"
-import { useRef } from "react"
+import { motion, useAnimation, useScroll, useTransform } from "framer-motion"
+import { useEffect, useRef } from "react"
+import Link from "next/link"
 
 export default function Home() {
   const scrollRef = useRef(null)
@@ -27,6 +28,19 @@ export default function Home() {
   const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0.8])
   const scale = useTransform(scrollYProgress, [0, 0.2], [1, 0.95])
 
+  // Animation controls for automatic motion
+  const controls = useAnimation()
+
+  useEffect(() => {
+    // Start the animation when the component mounts
+    controls.start({
+      opacity: 1,
+      x: 0,
+      scale: 1,
+      transition: { duration: 0.6 },
+    })
+  }, [controls])
+
   return (
     <div className="flex flex-col min-h-screen" ref={scrollRef}>
       {/* Hero Section with Parallax */}
@@ -36,8 +50,7 @@ export default function Home() {
             <motion.div
               className="flex flex-col justify-center space-y-4"
               initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
+              animate={controls} // Use animation controls
               style={{ opacity, scale }}
             >
               <div className="space-y-2">
@@ -50,14 +63,21 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Button className="bg-brown-700 hover:bg-brown-800">
-                  Shop Affordable Pads
-                  <ShoppingBag className="ml-2 h-4 w-4" />
-                </Button>
-                <Button variant="outline" className="border-brown-700 text-brown-700 hover:bg-cream-100">
-                  Join the Movement
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                {/* Link to Products Section */}
+                <Link href="/products">
+                  <Button className="bg-brown-700 hover:bg-brown-800">
+                    Shop Affordable Pads
+                    <ShoppingBag className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
+
+                {/* Link to Join Our Mission Section in About Us Page */}
+                <Link href="/about#join-our-mission">
+                  <Button variant="outline" className="border-brown-700 text-brown-700 hover:bg-cream-100">
+                    Join the Movement
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
               </div>
             </motion.div>
             <ParallaxScroll direction="down" speed={0.2}>
@@ -68,7 +88,7 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/Woman-Line-1.png"
                   alt="Adaora Hero Image"
                   width={400}
                   height={400}
@@ -134,25 +154,25 @@ export default function Home() {
                       name="Eco-Friendly Reusable Pad"
                       price={250}
                       description="Comfortable, washable pad that lasts up to 2 years"
-                      imageSrc="/placeholder.svg?height=200&width=200"
+                      imageSrc="/1.jpg?height=200&width=200"
                     />
                     <ProductCard
                       name="Cotton Comfort Pad"
                       price={300}
                       description="100% organic cotton, gentle on sensitive skin"
-                      imageSrc="/placeholder.svg?height=200&width=200"
+                      imageSrc="/2.webp?height=200&width=200"
                     />
                     <ProductCard
                       name="Night Protection Pad"
                       price={350}
                       description="Extra absorbent for overnight protection"
-                      imageSrc="/placeholder.svg?height=200&width=200"
+                      imageSrc="/8D long- PDP_FSA.jpg?height=200&width=200"
                     />
                     <ProductCard
                       name="Starter Kit"
                       price={800}
                       description="3 reusable pads with washing bag"
-                      imageSrc="/placeholder.svg?height=200&width=200"
+                      imageSrc="/4.jpg?height=200&width=200"
                     />
                   </div>
                 </TabsContent>
@@ -162,25 +182,25 @@ export default function Home() {
                       name="Basic Disposable Pads (10pk)"
                       price={50}
                       description="Affordable protection for everyday use"
-                      imageSrc="/placeholder.svg?height=200&width=200"
+                      imageSrc="/5.jpg?height=200&width=200"
                     />
                     <ProductCard
                       name="Ultra Thin Pads (8pk)"
                       price={60}
                       description="Discreet protection for active days"
-                      imageSrc="/placeholder.svg?height=200&width=200"
+                      imageSrc="/6.jpg?height=200&width=200"
                     />
                     <ProductCard
                       name="Night Protection (6pk)"
                       price={70}
                       description="Extra coverage for overnight use"
-                      imageSrc="/placeholder.svg?height=200&width=200"
+                      imageSrc="/7.webp?height=200&width=200"
                     />
                     <ProductCard
                       name="Monthly Supply Box"
                       price={200}
                       description="Complete monthly supply at discounted price"
-                      imageSrc="/placeholder.svg?height=200&width=200"
+                      imageSrc="/8.jpg?height=200&width=200"
                     />
                   </div>
                 </TabsContent>
@@ -273,7 +293,7 @@ export default function Home() {
               <ParallaxScroll direction="right" speed={0.3}>
                 <div className="flex justify-center">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/map.png?height=400&width=600"
                     alt="Kenya Access Map"
                     width={600}
                     height={400}
@@ -294,10 +314,10 @@ export default function Home() {
               <ParallaxScroll direction="left" speed={0.2}>
                 <div className="flex justify-center">
                   <Image
-                    src="/placeholder.svg?height=400&width=400"
+                    src="/12.png?height=400&width=400"
                     alt="Subscription Box"
-                    width={400}
-                    height={400}
+                    width={1400}
+                    height={1600}
                     className="rounded-lg object-cover"
                   />
                 </div>

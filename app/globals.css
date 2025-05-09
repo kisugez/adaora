@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -199,4 +201,16 @@ html {
 }
 .stagger-delay-5 {
   animation-delay: 0.5s;
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600; /* Semi-Bold */
+  }
+
+  p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300; /* Light */
+  }
 }
