@@ -207,7 +207,7 @@ export default function AboutPage() {
                       className="object-cover"
                     />
                   </div>
-                  <h3 className="text-lg font-semibold">Jane Doe</h3>
+                  <h3 className="text-lg font-semibold">Neema Wangui</h3>
                   <p className="text-sm text-brown-700">Founder & CEO</p>
                 </div>
               </ParallaxScroll>
@@ -222,7 +222,7 @@ export default function AboutPage() {
                       className="object-cover"
                     />
                   </div>
-                  <h3 className="text-lg font-semibold">John Smith</h3>
+                  <h3 className="text-lg font-semibold">Erick Kisuge</h3>
                   <p className="text-sm text-brown-700">Operations Director</p>
                 </div>
               </ParallaxScroll>
@@ -237,7 +237,7 @@ export default function AboutPage() {
                       className="object-cover"
                     />
                   </div>
-                  <h3 className="text-lg font-semibold">Mary Johnson</h3>
+                  <h3 className="text-lg font-semibold">Clemm</h3>
                   <p className="text-sm text-brown-700">Community Outreach</p>
                 </div>
               </ParallaxScroll>
