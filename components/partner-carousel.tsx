@@ -9,19 +9,19 @@ import { motion, AnimatePresence } from "framer-motion"
 const bannerAds = [
 	{
 		id: 1,
-		image: "/9.webp", // Replace with actual image path
+		image: "/placeholder.svg", // Replace with actual image path
 		alt: "Partner Advertisement 1",
 		link: "#", // Add a link if needed
 	},
 	{
 		id: 2,
-		image: "/10.jpg", // Replace with actual image path
+		image: "/placeholder.svg", // Replace with actual image path
 		alt: "Partner Advertisement 2",
 		link: "#", // Add a link if needed
 	},
 	{
 		id: 3,
-		image: "/safecycle.png", // Replace with actual image path
+		image: "/placeholder.svg", // Replace with actual image path
 		alt: "Partner Advertisement 3",
 		link: "#", // Add a link if needed
 	},
