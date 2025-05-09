@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import { Analytics } from "@vercel/analytics/next" // Import Analytics
 import { ArrowRight, ShoppingBag, BookOpen, Users, MapPin, Calendar, CreditCard, Heart } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -312,65 +313,14 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <ParallaxScroll direction="left" speed={0.2}>
-                <div className="flex justify-center">
+                <div className="flex justify-center w-full h-full">
                   <Image
-                    src="/12.png?height=400&width=400"
+                    src="/12.png"
                     alt="Subscription Box"
                     width={1400}
                     height={1600}
-                    className="rounded-lg object-cover"
+                    className="rounded-lg object-cover w-full h-full"
                   />
-                </div>
-              </ParallaxScroll>
-              <ParallaxScroll direction="right" speed={0.2}>
-                <div className="flex flex-col justify-center space-y-4">
-                  <div className="space-y-2">
-                    <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary-900">
-                      Monthly <span className="text-brown-700">Subscription</span>
-                    </h2>
-                    <p className="max-w-[600px] text-gray-600 md:text-xl/relaxed">
-                      Never worry about running out of supplies. Get monthly deliveries at discounted prices.
-                    </p>
-                  </div>
-                  <div className="grid grid-cols-1 gap-4">
-                    <Card>
-                      <CardContent className="p-6">
-                        <div className="flex items-center gap-4">
-                          <Calendar className="h-10 w-10 text-brown-700" />
-                          <div>
-                            <h3 className="text-lg font-semibold">Choose Your Kit</h3>
-                            <p className="text-sm text-gray-500">Select products and delivery frequency</p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardContent className="p-6">
-                        <div className="flex items-center gap-4">
-                          <CreditCard className="h-10 w-10 text-brown-700" />
-                          <div>
-                            <h3 className="text-lg font-semibold">Easy Payment</h3>
-                            <p className="text-sm text-gray-500">M-Pesa, cash on delivery, or vouchers</p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardContent className="p-6">
-                        <div className="flex items-center gap-4">
-                          <Heart className="h-10 w-10 text-brown-700" />
-                          <div>
-                            <h3 className="text-lg font-semibold">Sponsor a Woman</h3>
-                            <p className="text-sm text-gray-500">Help provide products to those in need</p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </div>
-                  <Button className="bg-brown-700 hover:bg-brown-800 w-full sm:w-auto">
-                    Start Your Subscription
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
                 </div>
               </ParallaxScroll>
             </div>
@@ -384,6 +334,9 @@ export default function Home() {
           <ImpactTracker />
         </AnimatedSection>
       </ParallaxBackground>
+
+      {/* Add Analytics Component */}
+      <Analytics />
     </div>
   )
 }
