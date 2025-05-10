@@ -87,6 +87,8 @@ export function SiteFooter() {
               © {new Date().getFullYear()} Adaora. All rights reserved.{" "}
               <a
                 href="https://www.erickkisuge.dev/"
+                target="_blank" // Opens the link in a new tab or window
+                rel="noopener noreferrer" // Improves security by preventing access to the `window.opener` object
                 className="text-brown-700 underline hover:text-brown-800"
               >
                 Designed by Erick Kisuge
