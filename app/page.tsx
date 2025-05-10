@@ -312,6 +312,7 @@ export default function Home() {
         <AnimatedSection className="w-full py-12 md:py-24 bg-white" delay={0.7}>
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+              {/* Image Section */}
               <ParallaxScroll direction="left" speed={0.2}>
                 <div className="flex justify-center w-full h-full">
                   <Image
@@ -321,6 +322,40 @@ export default function Home() {
                     height={1600}
                     className="rounded-lg object-cover w-full h-full"
                   />
+                </div>
+              </ParallaxScroll>
+
+              {/* Subscription Details Section */}
+              <ParallaxScroll direction="right" speed={0.2}>
+                <div className="flex flex-col justify-center space-y-4">
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary-900">
+                    Monthly <span className="text-brown-700">Subscription Box</span>
+                  </h2>
+                  <p className="max-w-[600px] text-gray-600 md:text-xl/relaxed">
+                    Get a curated box of feminine hygiene products delivered to your doorstep every month. Choose from reusable or disposable options tailored to your needs.
+                  </p>
+                  <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                    <Button className="bg-brown-700 hover:bg-brown-800">
+                      Subscribe Now
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                    <Button variant="outline" className="border-brown-700 text-brown-700 hover:bg-cream-100">
+                      Learn More
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </div>
+
+                  {/* Payment Options */}
+                  <div className="flex flex-col gap-4 mt-6">
+                    <div className="flex items-center gap-4">
+                      <CreditCard className="h-6 w-6 text-green-600" /> {/* M-Pesa Icon */}
+                      <p className="text-gray-700 text-lg">Pay with M-Pesa</p>
+                    </div>
+                    <div className="flex items-center gap-4">
+                      <ShoppingBag className="h-6 w-6 text-brown-700" /> {/* Cash on Delivery Icon */}
+                      <p className="text-gray-700 text-lg">Cash on Delivery</p>
+                    </div>
+                  </div>
                 </div>
               </ParallaxScroll>
             </div>
