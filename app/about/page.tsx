@@ -207,7 +207,7 @@ export default function AboutPage() {
                       className="object-cover"
                     />
                   </div>
-                  <h3 className="text-lg font-semibold">Neema Wangui</h3>
+                  <h3 className="text-lg font-semibold">.Kendwa Wangai</h3>
                   <p className="text-sm text-brown-700">Founder & CEO</p>
                 </div>
               </ParallaxScroll>
@@ -222,7 +222,7 @@ export default function AboutPage() {
                       className="object-cover"
                     />
                   </div>
-                  <h3 className="text-lg font-semibold">Erick Kisuge</h3>
+                  <h3 className="text-lg font-semibold">Stephanie Mbithi</h3>
                   <p className="text-sm text-brown-700">Operations Director</p>
                 </div>
               </ParallaxScroll>
@@ -237,7 +237,7 @@ export default function AboutPage() {
                       className="object-cover"
                     />
                   </div>
-                  <h3 className="text-lg font-semibold">Clemm</h3>
+                  <h3 className="text-lg font-semibold">Karen Ayo</h3>
                   <p className="text-sm text-brown-700">Community Outreach</p>
                 </div>
               </ParallaxScroll>
@@ -252,8 +252,23 @@ export default function AboutPage() {
                       className="object-cover"
                     />
                   </div>
-                  <h3 className="text-lg font-semibold">David Kamau</h3>
+                  <h3 className="text-lg font-semibold">Madelena Deng</h3>
                   <p className="text-sm text-brown-700">Partnerships Manager</p>
+                </div>
+              </ParallaxScroll>
+
+              <ParallaxScroll direction="up" speed={0.6}>
+                <div className="flex flex-col items-center space-y-2">
+                  <div className="relative w-32 h-32 rounded-full overflow-hidden">
+                    <Image
+                      src="/placeholder.svg?height=128&width=128"
+                      alt="Team Member"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <h3 className="text-lg font-semibold">Nicole Otiende</h3>
+                  <p className="text-sm text-brown-700">Team Leader</p>
                 </div>
               </ParallaxScroll>
             </div>
