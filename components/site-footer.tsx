@@ -83,7 +83,15 @@ export function SiteFooter() {
 
         <div className="mt-12 border-t pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-xs text-gray-500">© {new Date().getFullYear()} Adaora. All rights reserved.</p>
+            <p className="text-xs text-gray-500">
+              © {new Date().getFullYear()} Adaora. All rights reserved.{" "}
+              <a
+                href="https://www.erickkisuge.dev/"
+                className="text-brown-700 underline hover:text-brown-800"
+              >
+                Designed by Erick Kisuge
+              </a>
+            </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Image
                 src="/placeholder.svg?height=30&width=80"
