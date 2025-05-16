@@ -17,7 +17,11 @@ export const metadata = {
     initialScale: 1,
     maximumScale: 1,
   },
-    generator: 'v0.dev'
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 }
 
 export default function RootLayout({
