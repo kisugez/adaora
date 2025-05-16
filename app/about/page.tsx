@@ -290,7 +290,9 @@ export default function AboutPage() {
         </AnimatedSection>
       </ParallaxBackground>
 
-      {/* Join Us CTA */}
+
+
+      {/* Join Us Registration Form */}
       <ParallaxSection className="w-full py-12 md:py-24 bg-gradient-to-r from-cream-50 to-cream-100">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -300,19 +302,88 @@ export default function AboutPage() {
                   Join Our <span className="text-brown-700">Mission</span>
                 </h2>
                 <p className="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Together, we can make a difference in the lives of women across Kenya
+                  Register to become a part of our mission to make a difference in the lives of women across Kenya.
                 </p>
               </div>
-              <div className="flex flex-col gap-2 min-[400px]:flex-row mt-6">
-                <Button className="bg-brown-700 hover:bg-brown-800">
-                  Become a Partner
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-                <Button variant="outline" className="border-brown-700 text-brown-700 hover:bg-cream-100">
-                  Volunteer With Us
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </div>
+              <form className="w-full max-w-[600px] mx-auto mt-6 space-y-4">
+                {/* Name Field */}
+                <div className="flex flex-col">
+                  <label htmlFor="name" className="text-sm font-medium text-gray-700">
+                    Full Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    className="border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brown-700"
+                  />
+                </div>
+
+                {/* Company Field */}
+                <div className="flex flex-col">
+                  <label htmlFor="company" className="text-sm font-medium text-gray-700">
+                    Company (Optional)
+                  </label>
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    placeholder="Enter your company name"
+                    className="border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brown-700"
+                  />
+                </div>
+
+                {/* Phone Number Field */}
+                <div className="flex flex-col">
+                  <label htmlFor="phone" className="text-sm font-medium text-gray-700">
+                    Phone Number
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    className="border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brown-700"
+                  />
+                </div>
+
+                {/* Email Field */}
+                <div className="flex flex-col">
+                  <label htmlFor="email" className="text-sm font-medium text-gray-700">
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    className="border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brown-700"
+                  />
+                </div>
+
+                {/* Additional Details Field */}
+                <div className="flex flex-col">
+                  <label htmlFor="details" className="text-sm font-medium text-gray-700">
+                    Additional Details (Optional)
+                  </label>
+                  <textarea
+                    id="details"
+                    name="details"
+                    placeholder="Provide any additional information"
+                    rows={4}
+                    className="border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brown-700"
+                  ></textarea>
+                </div>
+
+                {/* Submit Button */}
+                <div className="flex justify-center">
+                  <Button className="bg-brown-700 hover:bg-brown-800 px-6 py-2 text-white rounded-lg">
+                    Submit Registration
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </div>
+              </form>
             </ParallaxScroll>
           </div>
         </div>
