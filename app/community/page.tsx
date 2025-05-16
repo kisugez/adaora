@@ -34,7 +34,7 @@ export default function CommunityPage() {
             </div>
             <div className="flex justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/c9cb95119574227.60c35e74ec33a (1).png?height=400&width=600"
                 alt="Kenya Access Map"
                 width={600}
                 height={400}
@@ -346,7 +346,7 @@ export default function CommunityPage() {
             </div>
             <div className="flex justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=400"
+                src="/feminine-face-line-art-minimalist-line-drawing-woman-face-beauty-fashion-logo-vector.png?height=400&width=400"
                 alt="Volunteers"
                 width={400}
                 height={400}

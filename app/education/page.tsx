@@ -34,7 +34,7 @@ export default function EducationPage() {
             </div>
             <div className="flex justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=400"
+                src="/Placeholder-Image.png?height=400&width=400"
                 alt="Education Hero"
                 width={400}
                 height={400}
@@ -291,7 +291,7 @@ export default function EducationPage() {
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="flex justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=400"
+                src="/education.webp?height=400&width=400"
                 alt="School Program"
                 width={400}
                 height={400}

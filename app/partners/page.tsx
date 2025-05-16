@@ -46,7 +46,7 @@ export default function PartnersPage() {
             <ParallaxScroll direction="down" speed={0.2}>
               <div className="flex justify-center">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/continuous-line-female-silhouette-woman-face-minimalistic-style-trendy-vector-illustration_507280-165.png?height=400&width=400"
                   alt="Partnership Handshake"
                   width={400}
                   height={400}
@@ -84,7 +84,7 @@ export default function PartnersPage() {
                   <Card className="overflow-hidden h-full">
                     <div className="h-40 bg-white flex items-center justify-center p-4 relative">
                       <Image
-                        src="/placeholder.svg?height=100&width=200"
+                        src="/9.webp?height=100&width=200"
                         alt="Partner Logo 1"
                         width={200}
                         height={100}
@@ -118,7 +118,7 @@ export default function PartnersPage() {
                   <Card className="overflow-hidden h-full">
                     <div className="h-40 bg-white flex items-center justify-center p-4 relative">
                       <Image
-                        src="/placeholder.svg?height=100&width=200"
+                        src="/10.jpg?height=100&width=200"
                         alt="Partner Logo 2"
                         width={200}
                         height={100}
@@ -152,7 +152,7 @@ export default function PartnersPage() {
                   <Card className="overflow-hidden h-full">
                     <div className="h-40 bg-white flex items-center justify-center p-4 relative">
                       <Image
-                        src="/placeholder.svg?height=100&width=200"
+                        src="/safecycle.png?height=100&width=200"
                         alt="Partner Logo 3"
                         width={200}
                         height={100}
@@ -341,7 +341,7 @@ export default function PartnersPage() {
                   <Card className="overflow-hidden">
                     <div className="aspect-video relative">
                       <Image
-                        src="/placeholder.svg?height=300&width=600"
+                        src="/TechnoServe_India.jpg?height=300&width=600"
                         alt="EcoFemme Story"
                         fill
                         className="object-cover"
@@ -366,7 +366,12 @@ export default function PartnersPage() {
                       <div className="flex items-center gap-4 mt-4">
                         <div className="flex items-center gap-2">
                           <Globe className="h-4 w-4 text-brown-700" />
-                          <a href="#" className="text-sm text-brown-700 hover:underline">
+                          <a
+                            href="https://ecofemme.org/"
+                            target="_blank" // Opens the link in a new tab or window
+                            rel="noopener noreferrer" // Improves security by preventing access to the `window.opener` object
+                            className="text-sm text-brown-700 hover:underline"
+                          >
                             Visit Website
                           </a>
                         </div>
@@ -383,7 +388,7 @@ export default function PartnersPage() {
                   <Card className="overflow-hidden">
                     <div className="aspect-video relative">
                       <Image
-                        src="/placeholder.svg?height=300&width=600"
+                        src="/1718928061107.jpeg?height=300&width=600"
                         alt="HerHealth Kenya Story"
                         fill
                         className="object-cover"
@@ -409,7 +414,12 @@ export default function PartnersPage() {
                       <div className="flex items-center gap-4 mt-4">
                         <div className="flex items-center gap-2">
                           <Globe className="h-4 w-4 text-brown-700" />
-                          <a href="#" className="text-sm text-brown-700 hover:underline">
+                          <a
+                            href="https://thepadproject.org/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm text-brown-700 hover:underline"
+                          >
                             Visit Website
                           </a>
                         </div>
@@ -426,7 +436,7 @@ export default function PartnersPage() {
                   <Card className="overflow-hidden">
                     <div className="aspect-video relative">
                       <Image
-                        src="/placeholder.svg?height=300&width=600"
+                        src="/brazil-team-1024x772.jpeg?height=300&width=600"
                         alt="SafeCycle Story"
                         fill
                         className="object-cover"
@@ -452,7 +462,12 @@ export default function PartnersPage() {
                       <div className="flex items-center gap-4 mt-4">
                         <div className="flex items-center gap-2">
                           <Globe className="h-4 w-4 text-brown-700" />
-                          <a href="#" className="text-sm text-brown-700 hover:underline">
+                          <a
+                            href="https://safecyclepads.com/?srsltid=AfmBOorodh4-7xPmT7kOYVsFWQh1TCh9M8ICCgoyXvOPr0_kPZCdnckK"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm text-brown-700 hover:underline"
+                          >
                             Visit Website
                           </a>
                         </div>
@@ -469,7 +484,7 @@ export default function PartnersPage() {
                   <Card className="overflow-hidden">
                     <div className="aspect-video relative">
                       <Image
-                        src="/placeholder.svg?height=300&width=600"
+                        src="/EF-Learn-B-01.jpg?height=300&width=600"
                         alt="Women First NGO Story"
                         fill
                         className="object-cover"
@@ -495,7 +510,12 @@ export default function PartnersPage() {
                       <div className="flex items-center gap-4 mt-4">
                         <div className="flex items-center gap-2">
                           <Globe className="h-4 w-4 text-brown-700" />
-                          <a href="#" className="text-sm text-brown-700 hover:underline">
+                          <a
+                            href="https://www.womenfirstfund.org/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm text-brown-700 hover:underline"
+                          >
                             Visit Website
                           </a>
                         </div>
@@ -587,7 +607,7 @@ export default function PartnersPage() {
             <ParallaxScroll direction="right" speed={0.3}>
               <div className="flex justify-center">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/Woman-Line-1.png?height=400&width=400"
                   alt="Partnership Network"
                   width={400}
                   height={400}

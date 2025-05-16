@@ -96,21 +96,21 @@ export function SiteFooter() {
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Image
-                src="/placeholder.svg?height=30&width=80"
+                src="/VGIF-Final-Logo-RGB-®.png?height=30&width=80"
                 alt="NGO Partner"
                 width={80}
                 height={30}
                 className="object-contain"
               />
               <Image
-                src="/placeholder.svg?height=30&width=80"
+                src="/pngtree-pink-ribbon-breast-cancer-icon-logo-illness-survivor-vector-png-image_38650834.png?height=30&width=80"
                 alt="Government Partner"
                 width={80}
                 height={30}
                 className="object-contain"
               />
               <Image
-                src="/placeholder.svg?height=30&width=80"
+                src="/IMG_3715.jpg?height=30&width=80"
                 alt="Corporate Partner"
                 width={80}
                 height={30}

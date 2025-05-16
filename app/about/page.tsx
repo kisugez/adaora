@@ -33,7 +33,7 @@ export default function AboutPage() {
             <ParallaxScroll direction="down" speed={0.2}>
               <div className="flex justify-center">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/hand-drawn-one-line-art-illustration_23-2149286323.png?height=400&width=400"
                   alt="Adaora Team"
                   width={400}
                   height={400}
@@ -207,7 +207,7 @@ export default function AboutPage() {
                       className="object-cover"
                     />
                   </div>
-                  <h3 className="text-lg font-semibold">.Kendwa Wangai</h3>
+                  <h3 className="text-lg font-semibold">Kendwa Wangai</h3>
                   <p className="text-sm text-brown-700">Founder & CEO</p>
                 </div>
               </ParallaxScroll>
@@ -269,6 +269,20 @@ export default function AboutPage() {
                   </div>
                   <h3 className="text-lg font-semibold">Nicole Otiende</h3>
                   <p className="text-sm text-brown-700">Team Leader</p>
+                </div>
+              </ParallaxScroll>
+              <ParallaxScroll direction="up" speed={0.6}>
+                <div className="flex flex-col items-center space-y-2">
+                  <div className="relative w-32 h-32 rounded-full overflow-hidden">
+                    <Image
+                      src="/placeholder.svg?height=128&width=128"
+                      alt="Team Member"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <h3 className="text-lg font-semibold">Erick Kisuge</h3>
+                  <p className="text-sm text-brown-700">Web Developer</p>
                 </div>
               </ParallaxScroll>
             </div>
