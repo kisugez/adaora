@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ArrowRight, ExternalLink, Globe, Heart, Users, Award } from "lucide-react"
@@ -32,10 +33,12 @@ export default function PartnersPage() {
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                  <Link href="/about#join-our-mission">
                   <Button className="bg-brown-700 hover:bg-brown-800">
                     Become a Partner
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
+                  </Link>
                   <Button variant="outline" className="border-brown-700 text-brown-700 hover:bg-cream-100">
                     View Partnership Benefits
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -593,10 +596,12 @@ export default function PartnersPage() {
                   </div>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                  <Link href="/about#join-our-mission">
                   <Button className="bg-brown-700 hover:bg-brown-800">
                     Apply to Become a Partner
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
+                  </Link>
                   <Button variant="outline" className="border-brown-700 text-brown-700 hover:bg-cream-100">
                     Download Partnership Guide
                     <ArrowRight className="ml-2 h-4 w-4" />

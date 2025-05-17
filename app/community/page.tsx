@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -22,10 +23,12 @@ export default function CommunityPage() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                <Link href="/community#access-issue">
                 <Button className="bg-primary-900 hover:bg-primary-800">
                   Report Access Issue
                   <MapPin className="ml-2 h-4 w-4" />
                 </Button>
+                </Link>
                 <Button variant="outline" className="border-primary-900 text-primary-900 hover:bg-cream-100">
                   View Access Map
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -47,6 +50,7 @@ export default function CommunityPage() {
       </section>
 
       {/* Report Access Issue Form */}
+      <div id="access-issue">
       <section className="w-full py-12 md:py-24 bg-white">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
@@ -147,7 +151,7 @@ export default function CommunityPage() {
           </div>
         </div>
       </section>
-
+      </div>
       {/* Community Forum Preview */}
       <section className="w-full py-12 md:py-24 bg-cream-50">
         <div className="container px-4 md:px-6">
@@ -334,10 +338,12 @@ export default function CommunityPage() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                <Link href="/about#join-our-mission">
                 <Button className="bg-primary-900 hover:bg-primary-800">
                   Apply Now
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
+                </Link>
                 <Button variant="outline" className="border-primary-900 text-primary-900 hover:bg-cream-100">
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />

@@ -293,6 +293,7 @@ export default function AboutPage() {
 
 
       {/* Join Us Registration Form */}
+      <div id="join-our-mission">
       <ParallaxSection className="w-full py-12 md:py-24 bg-gradient-to-r from-cream-50 to-cream-100">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -388,6 +389,7 @@ export default function AboutPage() {
           </div>
         </div>
       </ParallaxSection>
+    </div>
     </div>
   )
 }

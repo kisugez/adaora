@@ -240,27 +240,29 @@ export default function Home() {
                     title="Understanding Your Cycle"
                     description="Learn about the menstrual cycle and how to track it for better health."
                     icon={<BookOpen className="h-8 w-8 text-brown-700" />}
-                    href="/education/cycle"
+                    href="/education#resources"
                   />
                   <EducationCard
                     title="Menstrual Health Myths"
                     description="Debunking common myths and misconceptions about periods."
                     icon={<Users className="h-8 w-8 text-brown-700" />}
-                    href="/education/myths"
+                    href="/education#resources"
                   />
                   <EducationCard
                     title="School Programs"
                     description="How we're bringing menstrual education to schools across Kenya."
                     icon={<MapPin className="h-8 w-8 text-brown-700" />}
-                    href="/education/schools"
+                    href="/education#resources"
                   />
                 </div>
 
                 <div className="w-full mt-8">
+                  <Link href="/education#resources">
                   <Button variant="outline" className="border-brown-700 text-brown-700 hover:bg-cream-100">
                     View All Resources
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -283,10 +285,12 @@ export default function Home() {
                       </p>
                     </div>
                     <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                      <Link href="/community#access-issue">
                       <Button className="bg-brown-700 hover:bg-brown-800">
                         Report Access Issue
                         <MapPin className="ml-2 h-4 w-4" />
                       </Button>
+                      </Link>
                       <Button variant="outline" className="border-brown-700 text-brown-700 hover:bg-cream-100">
                         View Access Map
                         <ArrowRight className="ml-2 h-4 w-4" />
@@ -338,6 +342,7 @@ export default function Home() {
                       Get a curated box of feminine hygiene products delivered to your doorstep every month. Choose from reusable or disposable options tailored to your needs.
                     </p>
                     <div className="flex flex-col gap-2 min-[400px]:flex-row">
+
                       <Button className="bg-brown-700 hover:bg-brown-800">
                         Subscribe Now
                         <ArrowRight className="ml-2 h-4 w-4" />

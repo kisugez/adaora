@@ -22,14 +22,18 @@ export default function EducationPage() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                <Link href="/education#resources">
                 <Button className="bg-primary-900 hover:bg-primary-800">
                   Browse Resources
                   <BookOpen className="ml-2 h-4 w-4" />
                 </Button>
+                </Link>
+                <Link href="/education#workshops">
                 <Button variant="outline" className="border-primary-900 text-primary-900 hover:bg-cream-100">
                   Join a Workshop
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
+                </Link>
               </div>
             </div>
             <div className="flex justify-center">
@@ -47,6 +51,7 @@ export default function EducationPage() {
       </section>
 
       {/* Resource Tabs */}
+      <div id="resources">
       <section className="w-full py-12 md:py-24 bg-white">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-start gap-4">
@@ -284,7 +289,7 @@ export default function EducationPage() {
           </div>
         </div>
       </section>
-
+      </div>
       {/* School Programs */}
       <section className="w-full py-12 md:py-24 bg-cream-50">
         <div className="container px-4 md:px-6">
@@ -355,6 +360,7 @@ export default function EducationPage() {
       </section>
 
       {/* Community Workshops */}
+      <div id="workshops">
       <section className="w-full py-12 md:py-24 bg-white">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
@@ -449,10 +455,12 @@ export default function EducationPage() {
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
+              <Link href="/about#join-our-mission">
               <Button className="bg-primary-900 hover:bg-primary-800">
                 Apply to Volunteer
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
+              </Link>
               <Button variant="outline" className="border-primary-900 text-primary-900 hover:bg-cream-100">
                 Download Training Materials
                 <Download className="ml-2 h-4 w-4" />
@@ -461,6 +469,7 @@ export default function EducationPage() {
           </div>
         </div>
       </section>
+    </div>
     </div>
   )
 }

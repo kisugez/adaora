@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, CheckCircle } from "lucide-react"
 import { motion } from "framer-motion"
@@ -124,10 +125,12 @@ export function PartnerSection() {
           </div>
 
           <div className="w-full mt-8 flex justify-center">
+            <Link href="/about#join-our-mission">
             <Button variant="outline" className="border-brown-700 text-brown-700 hover:bg-cream-100">
               Become a Partner
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
+            </Link>
           </div>
         </div>
       </div>

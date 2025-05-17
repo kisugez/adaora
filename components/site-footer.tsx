@@ -68,7 +68,7 @@ export function SiteFooter() {
               </Link>
             </nav>
           </div>
-
+           <div id="subsrcibe-form">
           <div className="grid grid-cols-1 gap-4">
             <div className="font-medium">Subscribe to Our Newsletter</div>
             <div className="flex flex-col gap-2">
@@ -79,6 +79,7 @@ export function SiteFooter() {
               </div>
             </div>
           </div>
+        </div>
         </div>
 
         <div className="mt-12 border-t pt-8">
